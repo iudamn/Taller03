@@ -3,12 +3,13 @@ import java.io.IOException;
 
 public class Eje {
     public static void main(String[] args) {
-
+        inicio();
     }
 
-    public static void inicio(){
-        final String nombreDeArchivo = "./files/archivo.csv";
+    public static String inicio(){
+        final String nombreDeArchivo = "archivo.csv";
         crearArchivoCSV(nombreDeArchivo);
+        return nombreDeArchivo;
     }
 
     private static void crearArchivoCSV(String nombreDeArchivo) {
